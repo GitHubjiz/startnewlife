@@ -1,0 +1,17 @@
+# 开发环境配置
+server:
+  port: 8088
+
+spring:
+  application:
+    name: base-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: public
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
